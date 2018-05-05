@@ -15,7 +15,7 @@ sentences = re.split("(?<=[.!?]) +", text)
     #print (sentences)
 
 word_counts = len(words)
-sentence_counts = (len(sentences) - 1)
+sentence_counts = len(sentences)
 
 #Compute for Average 
 average_words = word_counts/sentence_counts
