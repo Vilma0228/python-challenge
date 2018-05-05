@@ -1,5 +1,6 @@
 import os
 import string
+import re
 
 #Files to read & variables
 file = open("paragraph_1.txt")
@@ -8,7 +9,7 @@ text = file.read()
 #Count using split function
 
 words = text.split(" ")
-sentences = text.split(".")
+sentences = re.split("(?<=[.!?]) +", text)
 
     #print (words)
     #print (sentences)
